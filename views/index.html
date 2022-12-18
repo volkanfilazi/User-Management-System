@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+
+    <title>User Management System</title>
+</head>
+<body>
+    
+    <header id="header" class="w-full h-10 bg-blue-500 flex items-center">
+        <nav class="w-full flex flex-col justify-center items-center ">
+            <div class="container">
+                <div class="text-center ">
+                    <a href="/" class="nav-brand text-black font-medium">User Management System</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="site-main" class="w-full h-full flex flex-col justify-center items-center">
+        <div class="container w-full min-h-[200px] flex flex-col justify-center items-center  ">
+            <div class="box-nav w-full text-white">
+                <a href="/add-user" class="w-full text-lg p-2 bg-black">
+                    <span class="text-gradient">New User</span>
+                </a>
+            </div>
+            <form action="/" method="POST" class="w-full mt-5 ">
+                <table class="w-[100%] border-spacing-0 bg-red-400 ">
+                    <thead class="text-center">
+                        <tr class="">
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>@Email</th>
+                            <th>Gender</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-center">
+                        <tr class="">
+                            <td>1</td>
+                            <td>Username</td>
+                            <td>example@gmail.com</td>
+                            <td>Male</td>
+                            <td>Active</td>
+                            <td>
+                                <a href="#" class="update">update</a>
+                                <a href="#" class="delete">delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
